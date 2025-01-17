@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/* "PARAMETRI" INTESTAZIONE DELLA PAGINA */
+
+section{
+    margin-top: 50px;
+}
+
+.titolo{
+    color: rgb(186, 81, 81);
+    text-align: center;
+}
+
+.paragrafo{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 50px;
+}
