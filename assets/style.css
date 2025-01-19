@@ -22,3 +22,30 @@ section{
     margin-left: 25%;
     margin-top: 50px;
 }
+
+/* ----------------------------------------------------------------------------- */
+
+/* PARAMETRI DELLA CARD */
+
+.team-container{
+    display: flex;
+    /* background-color: black; */
+    width: 400px;
+    margin-top: 80px;
+    margin-left: 40px;
+}
+
+.team-card {
+    display: flex;
+    background-color: black;
+}
+
+.card-text{
+    margin-top: 5px;
+    margin-left: 10px;
+    color: white;
+}
+
+.email-bianchi{
+    color: rgb(56, 111, 182);
+}

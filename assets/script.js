@@ -37,4 +37,51 @@ const teamMembers = [
   }
 ];
 
-console.table(teamMembers);
+//console.log(teamMembers);
+
+//------------------------------------------------------------------------
+
+// OUTPUT TEMPORANEO CON <LI> IN <UL>
+
+// Selezione elemento di output
+const listaTeam = document.querySelector(".team-container");
+
+let items = "";
+// Tirare fuori ogni singolo oggetto
+for (let i = 0; i < teamMembers.length; i++) {
+  let membroTeam = teamMembers[i];
+  //console.log(membroTeam);
+
+  // Estrapolare i valori delle varie proprietà dell'oggetto (1 metodo)
+  // let name = membroTeam.name;
+  // let role = membroTeam.role;
+  // let email = membroTeam.email;
+  // let img = membroTeam.img;
+
+  // Estrapolare i valori delle varie proprietà dell'oggetto (2 metodo)
+  const { name, role, email, img } = membroTeam;
+  
+  //console.log(name, role, email, img);
+
+  items += `
+    <div class="team-card">
+
+      <div class="card-image">
+        <img src="${img}" alt="" height="80px">
+      </div>
+
+      <div class="card-text">
+        <h3>${name}</h3>
+        <p>${role}</p><br>
+        <p class="email-bianchi">${email}</p>
+      </div>
+
+    </div>
+  `
+
+  console.log(items); 
+}
+
+
+// OUTPUT
+listaTeam.innerHTML = items;
